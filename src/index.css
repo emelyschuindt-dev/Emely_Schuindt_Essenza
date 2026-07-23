@@ -294,6 +294,72 @@ body {
 }
 
 /* ═══════════════════════════════════════════════
+   FORM WIZARD — multi-step, chips, progresso
+═══════════════════════════════════════════════ */
+.form-step {
+  animation: stepIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes stepIn {
+  from { opacity: 0; transform: translateX(22px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.form-progress {
+  height: 4px;
+  background: var(--cream-alt);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.form-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-deep));
+  border-radius: 999px;
+  transition: width 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Chips selecionáveis */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.2;
+  border-radius: 12px;
+  border: 1px solid var(--line-solid);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--ink-mid);
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease,
+              border-color 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+}
+
+.chip:hover {
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.chip.selected {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
+/* Campo com entrada suave */
+.form-field {
+  animation: fieldIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fieldIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════════
    IMAGE & CARD HELPERS
 ═══════════════════════════════════════════════ */
 .img-lift {
