@@ -1,5 +1,5 @@
 import { MapPin, ArrowRight, MessageCircle } from "lucide-react";
-import { MAPS_URL, WHATSAPP_NUMBER } from "../constants.js";
+import { whatsappLink } from "../constants.js";
 import { useFormOverlay } from "../App.jsx";
 import { useReveal } from "../hooks/useReveal.js";
 
@@ -27,7 +27,7 @@ export default function Contato() {
                 Agendar avaliação <ArrowRight size={16} />
               </button>
               <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

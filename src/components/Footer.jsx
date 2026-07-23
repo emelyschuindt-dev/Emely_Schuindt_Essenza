@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle, MapPin, ArrowUpRight } from "lucide-react";
-import { INSTAGRAM_URL, WHATSAPP_NUMBER, MAPS_URL } from "../constants.js";
+import { INSTAGRAM_URL, MAPS_URL, whatsappLink } from "../constants.js";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mt-6">
               {[
                 { href: INSTAGRAM_URL, icon: Instagram, label: "Instagram" },
-                { href: `https://wa.me/${WHATSAPP_NUMBER}`, icon: MessageCircle, label: "WhatsApp" },
+                { href: whatsappLink(), icon: MessageCircle, label: "WhatsApp" },
                 { href: MAPS_URL, icon: MapPin, label: "Maps" },
               ].map(({ href, icon: Icon, label }) => (
                 <a
@@ -69,7 +69,7 @@ export default function Footer() {
               <li>Dourados/MS · Brasil</li>
               <li className="pt-2">
                 <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                  href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[var(--gold-deep)] transition-colors"

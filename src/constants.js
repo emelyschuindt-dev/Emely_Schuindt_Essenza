@@ -2,6 +2,14 @@ export const WHATSAPP_NUMBER = "5567992624229";
 export const INSTAGRAM_URL = "https://instagram.com/draemelyschuindt";
 export const MAPS_URL = "https://maps.app.goo.gl/6Ga7TxKSfP1uVTzQ8?g_st=ic";
 
+// Mensagem padrão para os links diretos de WhatsApp (evita abrir em branco).
+export const WHATSAPP_DEFAULT_MESSAGE =
+  "Olá! Vim pelo site da Dra. Emely Schuindt e gostaria de agendar uma avaliação. 🙏";
+
+// Monta o link do WhatsApp já com a mensagem pré-preenchida.
+export const whatsappLink = (message = WHATSAPP_DEFAULT_MESSAGE) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
 export const NAV_LINKS = [
   { href: "#sobre", label: "Sobre" },
   { href: "#protocolo", label: "Protocolo" },

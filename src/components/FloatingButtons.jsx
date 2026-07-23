@@ -1,12 +1,12 @@
 import React from "react";
 import { MessageCircle, Instagram } from "lucide-react";
-import { WHATSAPP_NUMBER, INSTAGRAM_URL } from "../constants.js";
+import { INSTAGRAM_URL, whatsappLink } from "../constants.js";
 
 export default function FloatingButtons() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <a
-        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+        href={whatsappLink()}
         target="_blank"
         rel="noopener noreferrer"
         className="relative w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer pulse-ring"
