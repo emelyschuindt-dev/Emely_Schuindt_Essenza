@@ -87,4 +87,4 @@ Deploy automático na **Vercel** a cada push na branch `main`.
 
 ---
 
-Desenvolvido por [DNZ](https://dnzcentral.com.br)
+Desenvolvido por [doesnotzero.dev](https://www.instagram.com/doesnotzero.dev)

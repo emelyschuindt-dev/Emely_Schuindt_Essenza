@@ -92,13 +92,13 @@ export default function Footer() {
           <p className="text-[12px] flex items-center gap-1.5" style={{ color: "var(--ink-soft)" }}>
             Design & Dev por{" "}
             <a
-              href="https://dnzcentral.com.br"
+              href="https://www.instagram.com/doesnotzero.dev?igsh=MW51cWpxODZ4bHYxNg=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-0.5 font-semibold transition-colors hover:text-[var(--gold-deep)]"
               style={{ color: "var(--ink-mid)" }}
             >
-              DNZ <ArrowUpRight size={10} />
+              doesnotzero.dev <ArrowUpRight size={10} />
             </a>
           </p>
         </div>
